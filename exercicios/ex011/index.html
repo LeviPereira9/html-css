@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens, audios e vídeos</title>
+</head>
+<body>
+    <h1>Imagen flexível</h1>
+    <p>Imagens dinamicas</p>
+    <picture>
+        <source media="(min-width: 1050px)" srcset="imagens/foto-g.png" type="image/png">
+        <source media="(min-width: 750px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="Imagens/foto-p.png" alt="A imagem flexível funciona">
+    </picture>  
+    <h1>Audios</h1>  
+    <p>Vamos ver alguns audios, se pá, vou mandar o do lobo</p>
+    <audio src="audio/lobodefi.mp3" controls></audio>
+    <audio preload="metadata" controls loop>
+        <source src="audio/lobinho.mp3" type="audio/mpeg">
+    </audio>
+    <h1>Videos</h1>
+    <p>A melhor desição foi passar para a próxima página, <a href="pag002.html">clique aqui</a>.</p>
+
+</body>
+</html>

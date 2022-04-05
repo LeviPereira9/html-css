@@ -1,0 +1,22 @@
+@charset "UTF-8";
+/* Esse faz os comentários em CSS */
+
+body {
+    background-color: lightgoldenrodyellow;
+    color: chocolate;
+    font-size: 10pt;
+    font-family: Arial;
+}
+
+h1 {
+    color: brown;
+}
+
+a {
+    color: brown;
+    text-decoration: underline;
+}
+
+p {
+    text-align: justify;
+}

@@ -1,0 +1,205 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2? family= Bebas+Neue & display=swap');
+
+@font-face {
+    font-family: 'iDroid';
+    src: url(fonte/idroid.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: var(--fonte0);
+    /*color: var(--cor0);*/
+    background-color: var(--cor1);
+    margin: 0%;
+    padding: 0%;
+    
+}
+
+header { 
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor5));
+    color: white;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.425);
+    text-align: center;
+    height: 150px;
+    width: 100%;
+}
+
+header > p {
+    width: 350px;
+    margin: auto;
+}
+
+h1 {
+    padding-top: 2%;
+}
+
+
+nav {
+    height: 25px;
+    background-color: var(--cor5);
+    text-indent: 8px;
+}
+
+nav > a {
+    text-decoration: none;
+    margin-right: 8px;
+    color: white;
+}
+
+nav > a:hover {
+    text-decoration: underline;
+
+}
+
+main {
+    background-color: snow;
+    min-width: 400px;
+    max-width: 850px;
+    margin: auto;
+    margin-top: 0px;
+    text-indent: 10px;
+    line-height: 1.5em;
+    padding-top: 2px;
+    padding-right: 15px;
+    padding-left: 15px;
+    text-align: justify;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+h2 {
+    margin-top: 10px;
+    font-family: var(--fonte2);
+    color: var(--cor4);
+}
+
+h3 {
+    font-family: var(--fonte2);
+    color: var(--cor4);
+    background-image: linear-gradient( to right, var(--cor01), snow);
+    background-clip: padding-box;
+    background-position: absolute;
+}
+/* Tentativa falha, mas aprendi demais.
+
+Esse código aqui é usado para utilizar em gradiente de texto, vou até lançar no teste.
+
+.gradiante {
+    background-image: linear-gradient(to right, var(--cor1, snow));
+    background-clip: text;
+    background-clip: transparent;
+    background-size: 100%;
+} */
+
+
+
+
+
+/*
+main > article {
+    background-color: snow;
+    min-width: 380px;
+    max-width: 980px;
+    height: 980px;
+    padding-top: 10px;
+    outline: solid;
+    margin: auto;
+}*/
+
+article > aside {
+    min-width: 280px;
+    max-width: 840px;
+    margin: auto;
+    border-radius: 10px;
+    background-color: var(--cor1);
+}
+
+aside > h2 {
+    font-family: var(--fonte1);
+    background-color: var(--cor3);
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 10px;
+}
+
+aside > p {
+    line-height: 1.5em;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: var(--cor4)
+}
+
+
+footer {
+    background-color: var(--cor5);
+    text-align: center; 
+    color: white; 
+    width: 100%;  
+    height: 25px;
+    line-height: 25px;
+}
+
+
+:root {
+    --cor0: #c5ebd6;
+    --cor1: #83E1AD;
+    --cor2: #3DDC84;
+    --cor3: #2FA866;
+    --cor4: #1A5C37;
+    --cor5: #063d1e;
+    --fonte0: Arial, Helvetica, sans-serif;
+    --fonte1: 'Bebas Neue', cursive;
+    --fonte2: 'iDroid', sans-serif;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+}
+
+div.video {
+    position: relative;
+    background-color: var(--cor4);
+    height: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    padding-bottom: 59%;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+
+ul { 
+    list-style-type: '\2714\0020\0020';
+    columns: 2;
+    list-style-position: inside;
+    outline: dashed;
+    width: 550px;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

@@ -11,63 +11,73 @@
 }
 
 :root {
-    --titulo: 'Passion One'; 
-    --texto: 'Sriracha'
+    --titulo: 'Passion One', cursive; 
+    --texto: 'Sriracha', cursive;
 }
 
 header {
     background-color: #000000;
     color: white;
-    padding: 70px 0px;
+ /*    padding: 50px 0px; */
     text-align: center;
 }
 
-header h1 {
+header > h1 {
     font-size: 9.5vw;
     font-family: var(--titulo);
-
+    font-variant: small-caps;
+    padding-top: 60px;
 }
 
-header p {
-    font-size: 1.1em;
+header > p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3vw;
+    padding-bottom: 40px;
 }
 
-header a {
+header a, footer a {
     text-decoration: none;
     color: white;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-header a:hover {
+header a:hover, footer a:hover {
     text-decoration: underline;
 }
 
-article {
+main {
     font-family: var(--texto);
-    font-size: 4vw;
-    line-height: 1.8em;
+    font-size: 3.5vw;
+    line-height: 2em;
+}
+
+section > p {
+    padding: 0px 0px 20px 0px;
 }
 
 section.fbranco {
-    background-color: snow;
-    padding: 20px 20px;
+    background-color: white;
+    padding: 10vh 0vh 13.5vh 5vh;
 }
 
 section.naimagem {
-    padding: 50px 10px;
+    padding: 10vh 0vh 13.5vh 4vh;
+    box-shadow: inset 4px 4px 6px rgba(0, 0, 0, 0.644);
 }
 
 p.acima {
     background-color: #00000050;
     color: white;
+    text-shadow: 2px 2px 0px black;
     padding-left: 10px;
     border-radius: 10px;
-    width: 50vw;
+    width: 43vw;
 }
 
 article#flor {
     background-image: url(imagens/background001.jpg);
+    background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
@@ -86,14 +96,4 @@ footer {
     color: white;
     text-align: center;
     padding: 8px 0px 3px 0px;
-}
-
-footer a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-}
-
-footer a:hover {
-    text-decoration: underline;
 }

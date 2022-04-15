@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+
+    <style>
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 320px;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+
+        .cidade {
+            background-color: aqua;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Personalização de Colunas</h1>
+    <table>
+
+        <colgroup>
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cidade">
+        </colgroup>
+
+        <caption>
+            Cadastro
+        </caption>
+
+        <thead>
+            <th>Nome</th>
+            <th>Sexo</th>
+            <th>Idade</th>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Maria</td>
+                <td>F</td>
+                <td>25</td>
+            </tr>
+
+            <tr>
+                <td>Carlos</td>
+                <td>M</td>
+                <td>21</td>
+            </tr>
+
+            <tr>
+                <td>Vitoria</td>
+                <td>F</td>
+                <td>18</td>
+            </tr>
+
+            <tr>
+                <td>Marcelo</td>
+                <td>M</td>
+                <td>31</td>
+            </tr>
+
+            <tr>
+                <td>Maria</td>
+                <td>F</td>
+                <td>43</td>
+            </tr>
+
+            <tr>
+                <td>João</td>
+                <td>M</td>
+                <td>85</td>
+            </tr>
+        </tbody>
+
+    </table>
+</body>
+</html>
